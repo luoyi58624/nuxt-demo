@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
+  app:{
+    baseURL: '/nuxt-demo'
+  },
   vite: {
     base: '/nuxt-demo/'
   }
