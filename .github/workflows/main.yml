@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Install and Build 🔧
         run: |
-          npm run generate
+          yarn run generate
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
