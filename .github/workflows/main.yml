@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Install and Build 🔧
         run: |
+          yarn install --frozen-lockfile
           yarn run generate
 
       - name: Deploy
