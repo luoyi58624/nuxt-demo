@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  // app:{
-  //   baseURL: '/nuxt-demo/',
-  //   buildAssetsDir: "/static/",
-  // },
+  app:{
+    baseURL: '/nuxt-demo/',
+    buildAssetsDir: "/static/",
+  },
   // vite: {
   //   base: '/nuxt-demo/'
   // }
