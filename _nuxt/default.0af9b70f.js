@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as o,d as s,z as c,a as r}from"./entry.14c1a067.js";const n={},l=r("h1",null,"Layout",-1);function d(e,_){return a(),o("div",null,[l,s(" 一些在所有页面共享的默认布局 "),c(e.$slots,"default")])}const u=t(n,[["render",d]]);export{u as default};
