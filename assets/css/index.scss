@@ -1,0 +1,32 @@
+@import '@unocss/reset/tailwind.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  text-transform: none; // 禁止 vuetify 所有组件将英文转成大写
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+h2 {
+  @apply text-xl font-bold;
+}
+h3 {
+  @apply text-lg font-bold;
+}
+h4 {
+  @apply text-base font-bold;
+}
+h5 {
+  @apply text-sm font-bold;
+}
+h6 {
+  @apply text-xs font-bold;
+}

@@ -2,9 +2,9 @@
   <div>
     <h1>列表页</h1>
 
-    <!-- <ul>
+    <ul>
       <li v-for="item in data['data']">{{ item['appName'] }}</li>
-    </ul> -->
+    </ul>
     <NuxtLink to="/">首页</NuxtLink>
     <NuxtLink to="/list_detail">list detail page</NuxtLink>
   </div>
@@ -14,7 +14,7 @@
 definePageMeta({
   keepalive: true
 })
-// const { data } = await useFetch('http://localhost:3001/app-version')
+const { data } = await useFetch('http://localhost:3001/app-version')
 </script>
 
 <style scoped lang="scss"></style>

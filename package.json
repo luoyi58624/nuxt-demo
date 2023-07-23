@@ -11,6 +11,12 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.3"
+    "nuxt": "^3.6.3",
+    "sass": "^1.64.1"
+  },
+  "dependencies": {
+    "@invictus.codes/nuxt-vuetify": "^0.3.0",
+    "@unocss/nuxt": "^0.53.6",
+    "vuetify": "^3.3.9"
   }
 }
