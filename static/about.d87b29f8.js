@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";import{c as t,o as e}from"./entry.b51c31f2.js";/* empty css                   */const r={};function c(a,n){return e(),t("p",null,"this is about page")}const f=o(r,[["render",c]]);export{f as default};
