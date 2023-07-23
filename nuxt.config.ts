@@ -14,6 +14,10 @@ export default defineNuxtConfig({
   },
   modules: ['@unocss/nuxt'],
   $production: {
+    app: {
+      baseURL: '/nuxt-demo/',
+      buildAssetsDir: '/static/'
+    },
     runtimeConfig: {
       public: {
         serverApi: 'http://115.159.28.38:3001'
@@ -27,20 +31,4 @@ export default defineNuxtConfig({
       }
     }
   }
-  // nitro: {
-  //   prerender: {
-  //     routes: ['/', '/list']
-  //   }
-  // },
-  // app: {
-  //   pageTransition: {
-  //     name: 'page',
-  //     mode: 'out-in'
-  //   }
-  //   baseURL: '/nuxt-demo/',
-  //   buildAssetsDir: "/static/",
-  // }
-  // vite: {
-  //   base: '/nuxt-demo/'
-  // }
 })
