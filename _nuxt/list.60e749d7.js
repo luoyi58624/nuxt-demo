@@ -1,1 +1,0 @@
-import{_ as t}from"./nuxt-link.48ed6b53.js";import{_ as a,c as o,b as s,w as n,F as c,a as _,o as r,d as l}from"./entry.14c1a067.js";const i={},d=_("h1",null,"列表页",-1);function m(f,p){const e=t;return r(),o(c,null,[d,s(e,{to:"/list_detail"},{default:n(()=>[l("list detail page")]),_:1})],64)}const h=a(i,[["render",m]]);export{h as default};
