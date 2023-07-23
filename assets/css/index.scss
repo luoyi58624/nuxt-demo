@@ -1,12 +1,12 @@
-@import '@unocss/reset/tailwind.css';
+@import '@unocss/reset/tailwind-compat.css';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, Arial, sans-serif;
-  text-transform: none; // 禁止 vuetify 所有组件将英文转成大写
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: system-ui, -apple-system, Arial, sans-serif;
+//   text-transform: none; // 禁止 vuetify 所有组件将英文转成大写
+// }
 
 body {
   @apply bg-gray-50;

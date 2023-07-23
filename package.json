@@ -12,9 +12,16 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.3",
-    "sass": "^1.64.1"
+    "sass": "^1.64.1",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1"
   },
   "dependencies": {
-    "@unocss/nuxt": "^0.53.6"
+    "@pinia/nuxt": "^0.4.11",
+    "@unocss/nuxt": "^0.53.6",
+    "@varlet/touch-emulator": "^2.13.1",
+    "@varlet/ui": "^2.13.1",
+    "nuxt-swiper": "^1.2.0",
+    "pinia": "^2.1.4"
   }
 }

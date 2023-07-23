@@ -1,3 +1,7 @@
+import components from 'unplugin-vue-components/vite'
+import autoImport from 'unplugin-auto-import/vite'
+import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -23,7 +27,26 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@unocss/nuxt'],
+  imports: {
+    dirs: ['composables', 'stores']
+  },
+  modules: ['@unocss/nuxt', '@pinia/nuxt'],
+  pinia: {
+    autoImports: ['defineStore']
+  },
+  vite: {
+    ssr: {
+      noExternal: ['@varlet/ui']
+    },
+    plugins: [
+      components({
+        resolvers: [VarletUIResolver()]
+      }),
+      autoImport({
+        resolvers: [VarletUIResolver({ autoImport: true })]
+      })
+    ]
+  },
   $production: {
     app: {
       baseURL: '/nuxt-demo/',
