@@ -4,11 +4,13 @@ import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   ssr: true,
   experimental: {
-    payloadExtraction: true
+    payloadExtraction: true,
+    inlineSSRStyles: false
   },
+  css: ['@/assets/css/index.scss'],
   app: {
     head: {
       htmlAttrs: {
@@ -18,7 +20,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1, user-scalable=0'
+          content: 'width=device-width, initial-scale=1'
         },
         {
           'http-equiv': 'Content-Security-Policy',
@@ -30,9 +32,27 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables', 'stores']
   },
-  modules: ['@unocss/nuxt', '@pinia/nuxt'],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt', 'nuxt-swiper', 'nuxt-lodash'],
   pinia: {
     autoImports: ['defineStore']
+  },
+  swiper: {
+    // Swiper options
+    //----------------------
+    // prefix: 'Swiper',
+    // styleLang: 'css',
+    // modules: ['navigation', 'pagination'], // all modules are imported by default
+  },
+  lodash: {
+    prefix: '_',
+    prefixSkip: ['string'],
+    upperAfterPrefix: false,
+    exclude: ['map'],
+    alias: [
+      ['camelCase', 'stringToCamelCase'], // => stringToCamelCase
+      ['kebabCase', 'stringToKebab'], // => stringToKebab
+      ['isDate', 'isLodashDate'] // => _isLodashDate
+    ]
   },
   vite: {
     ssr: {
@@ -45,8 +65,11 @@ export default defineNuxtConfig({
       autoImport({
         resolvers: [VarletUIResolver({ autoImport: true })]
       })
-    ]
+    ],
+    build: {}
   },
+
+  build: {},
   $production: {
     app: {
       baseURL: '/nuxt-demo/',
