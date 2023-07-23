@@ -14,7 +14,10 @@
 definePageMeta({
   keepalive: true
 })
-const { data } = await useFetch('http://localhost:3001/app-version')
+const runtimeConfig = useRuntimeConfig()
+const { data } = await useFetch('/app-version', {
+  baseURL: runtimeConfig.public.serverApi
+})
 </script>
 
 <style scoped lang="scss"></style>
