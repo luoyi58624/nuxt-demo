@@ -9,7 +9,18 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'zh-CN'
-      }
+      },
+      meta: [
+        { charset: 'utf-8' },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, user-scalable=0'
+        },
+        {
+          'http-equiv': 'Content-Security-Policy',
+          content: 'upgrade-insecure-requests'
+        }
+      ]
     }
   },
   modules: ['@unocss/nuxt'],
