@@ -40,15 +40,15 @@ const navRoutes = [
 ]
 
 const images = [
-  '/images/home/header1.webp',
-  '/images/home/header2.webp',
-  '/images/home/header3.webp',
-  '/images/home/header4.webp',
-  '/images/home/header5.webp',
-  '/images/home/header6.webp'
+  'images/home/header1.webp',
+  'images/home/header2.webp',
+  'images/home/header3.webp',
+  'images/home/header4.webp',
+  'images/home/header5.webp',
+  'images/home/header6.webp'
 ].map(item => {
-  if (runtimeConfig.app.baseURL === '/') return item
-  else runtimeConfig.app.baseURL + '/' + item
+  if (runtimeConfig.app.baseURL === '/') return '/' + item
+  else return runtimeConfig.app.baseURL + item
 })
 </script>
 
