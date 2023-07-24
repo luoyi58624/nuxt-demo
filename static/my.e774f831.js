@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.c27b6911.js";import{c as t,o as s,a as o}from"./entry.0a50c439.js";/* empty css                   */const c={},n={class:"p-56px mx-auto p-4 xs:justify-center xs:w-full sm:justify-between sm:container"},r=o("h1",null,"我的页面",-1),a=[r];function _(i,m){return s(),t("main",n,a)}const u=e(c,[["render",_]]);export{u as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.c27b6911.js";import{c as s,o as t,a as o}from"./entry.0a50c439.js";/* empty css                   */const c={},n={class:"p-56px mx-auto p-4 xs:justify-center xs:w-full sm:justify-between sm:container"},a=o("h1",null,"分类页面",-1),r=[a];function _(i,f){return t(),s("main",n,r)}const u=e(c,[["render",_]]);export{u as default};
