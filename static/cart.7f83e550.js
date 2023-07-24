@@ -1,1 +1,0 @@
-import{_ as r}from"./_plugin-vue_export-helper.c27b6911.js";import{c,o as e}from"./entry.b51c31f2.js";/* empty css                   */const o={};function t(n,a){return e(),c("h1",null,"购物车")}const m=r(o,[["render",t]]);export{m as default};
