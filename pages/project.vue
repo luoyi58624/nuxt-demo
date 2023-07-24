@@ -1,5 +1,7 @@
 <template>
-  <h1>项目页面</h1>
+    <main class="p-56px mx-auto p-4 xs:(justify-center w-full) sm:(justify-between container)">
+    <h1>项目列表页面</h1>
+  </main>
 </template>
 
 <script setup lang="ts"></script>

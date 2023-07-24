@@ -37,7 +37,6 @@
 .waves {
   width: 100%;
   height: 15vh;
-  margin-bottom: -0.6875rem;
   min-height: 3.125rem;
   max-height: 9.375rem;
   content-visibility: auto;

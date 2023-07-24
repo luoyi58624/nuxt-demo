@@ -1,11 +1,9 @@
 <template>
-<h1>标签页面</h1>
+  <main class="p-56px mx-auto p-4 xs:(justify-center w-full) sm:(justify-between container)">
+    <h1>标签页面</h1>
+  </main>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
