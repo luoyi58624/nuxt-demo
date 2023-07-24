@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.c27b6911.js";import{c as o,o as r}from"./entry.33bc7b29.js";/* empty css                   */const t={};function c(n,a){return r(),o("h1",null,"标签页面")}const m=e(t,[["render",c]]);export{m as default};
