@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <img src="~/assets/images/home/header1.webp" /> -->
     <h1>首页</h1>
     <div class="i-ph-anchor-simple-thin"></div>
     <button class="btn m-1" @click="count++">count: {{ count }}</button>

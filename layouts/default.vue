@@ -30,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
 const navRoutes = [
   { name: '文章', route: '/' },
   { name: '标签', route: '/tag' },
@@ -45,7 +46,10 @@ const images = [
   '/images/home/header4.webp',
   '/images/home/header5.webp',
   '/images/home/header6.webp'
-]
+].map(item => {
+  if (runtimeConfig.app.baseURL === '/') return item
+  else runtimeConfig.app.baseURL + '/' + item
+})
 </script>
 
 <style scoped lang="scss">
