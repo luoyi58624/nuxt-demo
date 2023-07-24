@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>首页</h1>
+    <div class="i-ph-anchor-simple-thin"></div>
     <button class="btn m-1" @click="count++">count: {{ count }}</button>
     <button class="btn m-1" @click="appStore.count++">store count: {{ appStore.count }}</button>
     <var-button type="primary" @click="count++">count: {{ count }}</var-button>

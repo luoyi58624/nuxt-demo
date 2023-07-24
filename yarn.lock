@@ -557,7 +557,15 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@iconify/types@^2.0.0":
+"@iconify/json@^2.2.93":
+  version "2.2.93"
+  resolved "https://registry.npmmirror.com/@iconify/json/-/json-2.2.93.tgz#578b4e2b42ff768a39c350b51e9f0ebd2bc42e38"
+  integrity sha512-gEC9TmJbd96CzJzl0TOYCGWhiHFalHRfhqi+xkVl3uOMWH6l15iVeL7tRiPdY/q5hxYfSva36XbqlDyKFyWCPw==
+  dependencies:
+    "@iconify/types" "*"
+    pathe "^1.1.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmmirror.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
