@@ -84,7 +84,8 @@ export default defineNuxtConfig({
   $development: {
     runtimeConfig: {
       public: {
-        serverApi: 'http://localhost:3001'
+        // serverApi: 'http://localhost:3001'
+        serverApi: 'http://115.159.28.38:3001'
       }
     }
   }

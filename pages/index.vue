@@ -5,9 +5,9 @@
     <button class="btn m-1" @click="count++">count: {{ count }}</button>
     <button class="btn m-1" @click="appStore.count++">store count: {{ appStore.count }}</button>
     <var-button type="primary" @click="count++">count: {{ count }}</var-button>
-    <ul>
+    <!-- <ul>
       <li v-for="item in data['data']">{{ item['appName'] }}</li>
-    </ul>
+    </ul> -->
     <NuxtLink to="/list">list page</NuxtLink>
   </div>
 </template>
@@ -21,7 +21,7 @@ const runtimeConfig = useRuntimeConfig()
 const appStore = useAppStore()
 const count = ref(0)
 
-const { data } = await useFetch('/app-version', {
-  baseURL: runtimeConfig.public.serverApi
-})
+// const { data } = await useFetch('/app-version', {
+//   baseURL: runtimeConfig.public.serverApi
+// })
 </script>
