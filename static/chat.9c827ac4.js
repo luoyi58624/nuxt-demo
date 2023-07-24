@@ -1,0 +1,1 @@
+import{_ as c}from"./_plugin-vue_export-helper.c27b6911.js";import{c as e,o}from"./entry.33bc7b29.js";/* empty css                   */const r={};function t(n,a){return o(),e("h1",null,"消息")}const m=c(r,[["render",t]]);export{m as default};
